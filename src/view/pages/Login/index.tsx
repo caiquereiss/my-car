@@ -25,7 +25,7 @@ export function Login() {
           </span>
           <Link
             to="/"
-            className="tracking-[-0.5px] font-medium text-teal-900">
+            className="tracking-[-0.5px] font-medium text-blue-900">
             Crie uma conta
           </Link>
         </p>
