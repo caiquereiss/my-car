@@ -2,3 +2,11 @@
  - Clonar o repositório my-car;
  - Instalar as dependências com `npm i` quando estiver com o projeto aberto em sua maquina;
  - Para executar o projeto basta rodar o comando `npm run dev`
+
+
+
+
+- Estaremos utilizando
+  [] Vite
+  [] TailwindCSS
+  []
