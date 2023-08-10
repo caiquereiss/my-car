@@ -8,14 +8,17 @@ export function Router() {
     <BrowserRouter>
       <Routes>
         <Route element={<AuthGuard isPrivate={false} />}>
+          <Route path="/" element={<h1>LandingPage</h1>} />
+
           <Route element={<AuthLayout />}>
             <Route path="/login" element={<Login />} />
           </Route>
+ 
         </Route>
 
 
         <Route element={<AuthGuard isPrivate={true} />}>
-          <Route path="/" element={<h1>MyCars</h1>} />
+          <Route path="/Logado" element={<h1>Logado</h1>} />
         </Route>
       </Routes>
 

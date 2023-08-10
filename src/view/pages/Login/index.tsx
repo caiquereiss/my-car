@@ -2,14 +2,19 @@ import { Link } from "react-router-dom";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { useLoginController } from "./useLoginController";
+import { ArrowLeftIcon } from '@radix-ui/react-icons';
 
 export function Login() {
   const { handleSubmit, register, errors, isLoading } = useLoginController();
 
   return (
     <>
-      <header className="flex flex-col items-center gap-4 text-center">
+      <Link to="/" className="flex items-center gap-2">
+        <ArrowLeftIcon />
+        <span>Voltar</span>
+      </Link>
 
+      <header className="flex flex-col items-center gap-4 text-center">
         <h1 className="text-2xl font-bold text-gray-900 tracking-[-1px]">
           Entre em sua conta
         </h1>
