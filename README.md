@@ -9,4 +9,10 @@
 - Estaremos utilizando
   [] Vite
   [] TailwindCSS
-  []
+  [] clsx
+  [] tailwind-merge
+  [] zod
+  [] react-hook-form
+  [] @hookform/resolvers
+  [] @radix-ui/react-icons
+  [] johndoe@example.com password === '12345678'
