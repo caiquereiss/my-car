@@ -11,12 +11,13 @@ export const RENTCARS = [
     id: 1,
     img: S10,
     marca: "Chevrolet",
-    modelo: "S10 2020",
+    modelo: "S10",
     ano: 2023,
     preco: 4050.00,
     motor: "1.0",
     cambio: "Manual",
     flex: true,
+    porta: 4,
     passageiros: 5,
     ar_condicionado: true
   },
@@ -30,6 +31,7 @@ export const RENTCARS = [
     motor: "1.8",
     cambio: "Automático",
     flex: true,
+    porta: 4,
     passageiros: 5,
     ar_condicionado: true
   },
@@ -43,6 +45,7 @@ export const RENTCARS = [
     motor: "1.4",
     cambio: "Manual",
     flex: true,
+    porta: 4,
     passageiros: 5,
     ar_condicionado: true
   },
@@ -56,6 +59,7 @@ export const RENTCARS = [
     motor: "2.0",
     cambio: "Automático",
     flex: false,
+    porta: 4,
     passageiros: 5,
     ar_condicionado: true
   },
@@ -69,6 +73,7 @@ export const RENTCARS = [
     motor: "1.6",
     cambio: "Automático",
     flex: true,
+    porta: 4,
     passageiros: 5,
     ar_condicionado: true
   },
@@ -82,6 +87,7 @@ export const RENTCARS = [
     motor: "1.0",
     cambio: "Manual",
     flex: true,
+    porta: 4,
     passageiros: 5,
     ar_condicionado: false
   },
@@ -95,6 +101,7 @@ export const RENTCARS = [
     motor: "1.4",
     cambio: "Automático",
     flex: true,
+    porta: 4,
     passageiros: 5,
     ar_condicionado: true
   }
@@ -112,6 +119,7 @@ export const TOPCARS = [
     motor: "1.0",
     cambio: "Manual",
     flex: true,
+    porta: 4,
     passageiros: 5,
     ar_condicionado: true
   },
@@ -125,6 +133,7 @@ export const TOPCARS = [
     motor: "1.8",
     cambio: "Automático",
     flex: true,
+    porta: 4,
     passageiros: 5,
     ar_condicionado: true
   },
@@ -138,6 +147,7 @@ export const TOPCARS = [
     motor: "1.4",
     cambio: "Manual",
     flex: true,
+    porta: 4,
     passageiros: 5,
     ar_condicionado: true
   },
