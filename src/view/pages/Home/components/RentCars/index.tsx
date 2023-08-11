@@ -4,6 +4,7 @@ import { CardsCard } from "../CardsCar";
 import { SliderNavigation } from "./SliderNavigation";
 import { useRentCarsController } from "./useRentCarsController";
 import search from '../../../../../assets/search.svg'
+import { Input } from "../../../../components/Input";
 
 export function RentCars() {
   const {
@@ -18,15 +19,14 @@ export function RentCars() {
   } = useRentCarsController()
 
   return (
-    <div id="aluguel" className="w-full" >
-      <h1 className="text-center font-bold text-3xl tracking-[1px] mt-10 mb-10 2xl:mt:5 text-orange-400">Carros para Aluguel</h1>
+    <div id="aluguel" className="w-full scroll-smooth md:scroll-auto" >
+      <h1 className="text-center font-bold text-3xl tracking-[1px]  mb-10 2xl:mt:5 text-blue-900">Carros para Aluguel</h1>
       <div className="mb-4 w-full px-11 lg:px-52">
-        <input
+        <Input
           type="text"
           placeholder="Filtrar por marca, modelo ou ano"
-          value={filter}
+          name="text"
           onChange={handleFilter}
-          className="border rounded px-2 py-1 w-full"
         />
       </div>
 
@@ -62,9 +62,9 @@ export function RentCars() {
         </Swiper >
         {
           filteredCars.length === 0 && (
-            <div className="flex gap-2 items-center justify-center w-full h-40">
+            <div className="w-ful flex mb-10 gap-2 items-center justify-center  h-[300px]">
               <img src={search} />
-              <span>{`Nenhum resultado foi encontrado para "${filter}"`}</span>
+              <span className="text-gray-700">{`Nenhum resultado foi encontrado para "${filter}"`}</span>
             </div>
           )
         }
