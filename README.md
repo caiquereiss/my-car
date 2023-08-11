@@ -15,4 +15,5 @@
   [] react-hook-form
   [] @hookform/resolvers
   [] @radix-ui/react-icons
+  [] swiper
   [] johndoe@example.com password === '12345678'

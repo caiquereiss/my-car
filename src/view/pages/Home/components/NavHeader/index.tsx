@@ -1,0 +1,61 @@
+import { useNavHeaderController } from "./useNavHeaderController";
+import logo from '../../../../../assets/logo.svg';
+
+export function NavHeader() {
+  const { isMenuOpen, handleToggleMenu } = useNavHeaderController()
+
+  return (
+    <nav className="bg-gray-100  p-4 shadow-lg lg:px-36">
+      <div className="flex items-center justify-between">
+        <div>
+          <img className="w-12 h-12" src={logo} />
+        </div>
+        <div className="md:hidden">
+          <button
+            onClick={handleToggleMenu}
+            className="text-blue-900 focus:outline-none"
+            aria-label="Menu"
+          >
+            <svg
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+        <div className="hidden md:flex space-x-4 ">
+          <a href="#top-cars" className="text-blue-900 py-1  hover:text-blue-300">
+            Top Cars
+          </a>
+          <a href="#aluguel" className="text-blue-900 py-1  hover:text-blue-300">
+            Aluguel
+          </a>
+          <a href="/login" className="bg-blue-100 px-2 py-1 flex items-center justify-center rounded-full text-blue-900 hover:text-blue-300">
+            Login
+          </a>
+        </div>
+      </div>
+      {isMenuOpen && (
+        <div className="md:hidden mt-4 space-y-2 ">
+          <a href="#" className="block text-blue-900 hover:text-blue-300">
+            Home
+          </a>
+          <a href="#" className="block text-blue-900 hover:text-blue-300">
+            Aluguel
+          </a>
+          <a href="/login" className="block text-blue-900 hover:text-blue-300">
+            Login
+          </a>
+        </div>
+      )}
+    </nav>
+  )
+}

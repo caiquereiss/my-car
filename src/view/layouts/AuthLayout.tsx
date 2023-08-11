@@ -13,9 +13,11 @@ export function AuthLayout() {
       </div>
 
       <div className="w-1/2 bg-gray-0 h-full justify-center items-center p-8 relative hidden lg:flex">
+        <div className='bg-blue-600 w-3/5 h-4/5  rounded-2xl relative'>
+        </div>
         <img
           src={illustrationCar}
-          className="object-contain w-full h-full  select-none rounded-[32px]" />
+          className="object-contain w-full h-full absolute select-none rounded-[32px]" />
       </div>
     </div>
   )
