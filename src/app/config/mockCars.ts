@@ -24,7 +24,7 @@ export const RENTCARS = [
     id: 2,
     img: Toro,
     marca: "Fiat",
-    modelo: "Touro",
+    modelo: "Toro",
     ano: 2022,
     preco: 3980.00,
     motor: "1.8",
