@@ -6,6 +6,9 @@ export default {
   ],
 
   theme: {
+    fontFamily: {
+      'sans': 'Montserrat, Arial, sans-serif',
+    },
     extend: {
       colors: {
         gray: {

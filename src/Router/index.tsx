@@ -13,6 +13,7 @@ export function Router() {
 
           <Route element={<AuthLayout />}>
             <Route path="/login" element={<Login />} />
+            <Route path="/info-car/:id" element={<h1>Chegamos</h1>} />
           </Route>
 
         </Route>

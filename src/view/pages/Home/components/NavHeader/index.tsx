@@ -5,11 +5,12 @@ export function NavHeader() {
   const { isMenuOpen, handleToggleMenu } = useNavHeaderController()
 
   return (
-    <nav className="bg-gray-100  p-4 shadow-lg lg:px-36">
+    <nav className="bg-white  p-4 shadow-[1px_1px_20px_-10px_#000] lg:px-36 text-base font-medium">
       <div className="flex items-center justify-between">
         <div>
           <img className="w-12 h-12" src={logo} />
         </div>
+
         <div className="md:hidden">
           <button
             onClick={handleToggleMenu}
@@ -45,10 +46,10 @@ export function NavHeader() {
       </div>
       {isMenuOpen && (
         <div className="md:hidden mt-4 space-y-2 ">
-          <a href="#" className="block text-blue-900 hover:text-blue-300">
-            Home
+          <a href="#top-cars" className="block text-blue-900 hover:text-blue-300">
+            Top Cars
           </a>
-          <a href="#" className="block text-blue-900 hover:text-blue-300">
+          <a href="#aluguel" className="block text-blue-900 hover:text-blue-300">
             Aluguel
           </a>
           <a href="/login" className="block text-blue-900 hover:text-blue-300">
