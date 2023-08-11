@@ -15,6 +15,7 @@ interface CardsCardProps {
     flex: boolean;
     passageiros: number;
     ar_condicionado: boolean;
+    porta: number;
   };
   toggleFavorite: (id: number) => void;
   favorites: number[]
