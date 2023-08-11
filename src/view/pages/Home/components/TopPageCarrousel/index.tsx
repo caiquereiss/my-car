@@ -18,7 +18,7 @@ export function TopPageCarrousel() {
           slidesPerView={1}
           centeredSlides
           spaceBetween={16}
-          className="w-full lg:w-4/5 mt-20  px-2"
+          className="w-full lg:w-4/5 mt-20  px-4"
           onSlideChange={swiper => {
             setSliderState({
               isBeginning: swiper.isBeginning,
