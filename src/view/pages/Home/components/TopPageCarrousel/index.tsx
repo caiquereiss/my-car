@@ -20,7 +20,6 @@ export function TopPageCarrousel() {
           spaceBetween={16}
           className="w-full lg:w-4/5 mt-20  px-2"
           onSlideChange={swiper => {
-            console.log('swiper', swiper)
             setSliderState({
               isBeginning: swiper.isBeginning,
               isEnd: swiper.isEnd
@@ -35,7 +34,7 @@ export function TopPageCarrousel() {
           {
             TOPCARS.map((car, index) => (
               <SwiperSlide key={index}>
-                <div className="p-4 flex flex-col items-center justify-center bg-blue-100 shadow-lg rounded-2xl h-full w-full border-b-4">
+                <div className="p-4 flex flex-col items-center justify-center bg-gray-100 shadow-lg rounded-2xl h-full w-full border-b-4">
                   <div className="flex gap-2 lg:gap-10 lg:mb-20">
                     <h1 className="text-black font-bold lg:text-3xl tracking-[-0.5px]">{car.marca}</h1>
                     <h2 className="text-black font-bold lg:text-3xl tracking-[-0.5px]">{car.modelo}</h2>
