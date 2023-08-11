@@ -10,6 +10,7 @@ export function Home() {
         <NavHeader />
       </header>
 
+
       <div className="mb-20">
         <TopPageCarrousel />
       </div>
