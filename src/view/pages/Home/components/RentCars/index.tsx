@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { CardsCard } from "../CardsCar";
 import { SliderNavigation } from "./SliderNavigation";
 import { useRentCarsController } from "./useRentCarsController";
-
+import search from '../../../../../assets/search.svg'
 
 export function RentCars() {
   const {
@@ -14,13 +14,13 @@ export function RentCars() {
     handleFilter,
     filteredCars,
     filter,
-    favorites
+    favorites,
   } = useRentCarsController()
 
   return (
     <div id="aluguel" className="w-full" >
-      <h1 className="text-2xl font-bold mb-4">Carros para Aluguel</h1>
-      <div className="mb-4">
+      <h1 className="text-center font-bold text-3xl tracking-[1px] mt-10 mb-10 2xl:mt:5 text-orange-400">Carros para Aluguel</h1>
+      <div className="mb-4 w-full px-11 lg:px-52">
         <input
           type="text"
           placeholder="Filtrar por marca, modelo ou ano"
@@ -34,6 +34,7 @@ export function RentCars() {
         <Swiper
           slidesPerView={windowWidth >= 500 ? 3 : 1}
           spaceBetween={16}
+          className="w-full lg:w-4/5 mt-20  px-4"
           onSlideChange={swiper => {
             setSliderState({
               isBeginning: swiper.isBeginning,
@@ -46,7 +47,7 @@ export function RentCars() {
             isBeginning={sliderState.isBeginning}
             isEnd={sliderState.isEnd}
           />
-          {
+          {filteredCars.length > 0 && (
             filteredCars.map((car, index) => (
               <SwiperSlide key={index}>
                 <div>
@@ -54,8 +55,19 @@ export function RentCars() {
                 </div>
               </SwiperSlide >
             ))
+          )
+
           }
+
         </Swiper >
+        {
+          filteredCars.length === 0 && (
+            <div className="flex gap-2 items-center justify-center w-full h-40">
+              <img src={search} />
+              <span>{`Nenhum resultado foi encontrado para "${filter}"`}</span>
+            </div>
+          )
+        }
       </div >
     </div>
   );
