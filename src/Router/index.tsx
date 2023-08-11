@@ -3,6 +3,7 @@ import { AuthGuard } from "./AuthGuard";
 import { AuthLayout } from "../view/layouts/AuthLayout";
 import { Login } from "../view/pages/Login";
 import { Home } from "../view/pages/Home";
+import { InfoCar } from "../view/pages/InfoCar";
 
 export function Router() {
   return (
@@ -10,10 +11,10 @@ export function Router() {
       <Routes>
         <Route element={<AuthGuard isPrivate={false} />}>
           <Route path="/" element={<Home />} />
+          <Route path="/info-car/:id" element={<InfoCar />} />
 
           <Route element={<AuthLayout />}>
             <Route path="/login" element={<Login />} />
-            <Route path="/info-car/:id" element={<h1>Chegamos</h1>} />
           </Route>
 
         </Route>
