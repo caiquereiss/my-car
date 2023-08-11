@@ -42,7 +42,7 @@ export function useRentCarsController() {
   };
 
   const handleFilter = (event: ChangeEvent<HTMLInputElement>) => {
-    const inputValue: string = event.target.value || ''; // Garantindo que seja uma string
+    const inputValue: string = event.target.value || '';
     setFilter(inputValue);
   };
 
@@ -60,6 +60,6 @@ export function useRentCarsController() {
     handleFilter,
     filteredCars,
     filter,
-    favorites
+    favorites,
   }
 }
