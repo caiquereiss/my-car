@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useRef } from 'react';
+// import { useRef } from 'react';
 
 export function useInitialSearch() {
   // const aluguelRef = useRef(null);
