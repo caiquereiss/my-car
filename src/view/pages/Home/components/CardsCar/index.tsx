@@ -34,8 +34,8 @@ export function CardsCard({ car, toggleFavorite, favorites }: CardsCardProps) {
       <div
         className="p-4 bg-white rounded-2xl h-[300px] flex flex-col justify-center items-center border-b-4 border-b-teal-950 mb-8">
         <div className='flex items-center gap-2'>
-          <h3 className="text-lg font-semibold">{car.marca}</h3>
-          <span> {car.modelo}</span>
+          <h3 className="text-lg font-semibold">{car.modelo}</h3>
+          <span> {car.marca}</span>
           <p>{car.ano}</p>
 
         </div>
