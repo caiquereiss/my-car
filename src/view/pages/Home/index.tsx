@@ -3,6 +3,7 @@ import 'swiper/css';
 import { TopPageCarrousel } from "./components/TopPageCarrousel";
 import { RentCars } from "./components/RentCars";
 import { InitialSearch } from "./components/IniaialSearch";
+import { FooterPage } from "./components/FooterPage";
 
 export function Home() {
   return (
@@ -19,6 +20,10 @@ export function Home() {
 
       <div className="flex w-full ">
         <RentCars />
+      </div>
+
+      <div className="mt-10">
+        <FooterPage />
       </div>
     </>
   )
