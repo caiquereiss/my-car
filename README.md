@@ -33,14 +33,14 @@ git clone https://github.com/SEU_USUARIO/my-car.git
 cd my-car
 
 #### 2 -Instale as dependências usando o npm ou yarn:
-npm install
+- npm install
 - ou
-yarn install
+- yarn install
 
 ### 3 - Inicie o servidor de desenvolvimento:
-npm run dev
+- npm run dev
 - ou
-yarn dev
+- yarn dev
 
 
 # OBS: Para a tela de login:
