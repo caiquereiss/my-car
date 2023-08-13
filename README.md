@@ -1,19 +1,44 @@
-# Como executar o projeto:
- - Clonar o repositório my-car;
- - Instalar as dependências com `npm i` quando estiver com o projeto aberto em sua maquina;
- - Para executar o projeto basta rodar o comando `npm run dev`
+# My Car Project
+
+Este é o projeto "My Car", uma aplicação desenvolvida com React, Vite e afins.
+
+## Bibliotecas Utilizadas
+
+- [@hookform/resolvers](https://www.npmjs.com/package/@hookform/resolvers): Resolvedores para formulários React.
+- [@radix-ui/react-icons](https://www.npmjs.com/package/@radix-ui/react-icons): Ícones React do Radix UI.
+- [@radix-ui/react-select](https://www.npmjs.com/package/@radix-ui/react-select): Componente de seleção do Radix UI.
+- [clsx](https://www.npmjs.com/package/clsx): Utilitário para construir strings de classes condicionais.
+- [react](https://reactjs.org/): Biblioteca principal para construção de interfaces do usuário.
+- [react-dom](https://reactjs.org/): Renderização de componentes React no navegador.
+- [react-hook-form](https://react-hook-form.com/): Biblioteca para manipulação de formulários React.
+- [react-hot-toast](https://react-hot-toast.com/): Notificações de toasts para React.
+- [react-router-dom](https://reactrouter.com/web/guides/quick-start): Roteamento para aplicativos React.
+- [swiper](https://swiperjs.com/): Componente de carrossel (slider) interativo.
+- [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): Utilitário para mesclar classes Tailwind CSS.
+- [zod](https://github.com/vriad/zod): Biblioteca de validação de schema.
+
+## Requisitos
+
+- [Node.js](https://nodejs.org/) (versão recomendada: 14.x ou superior)
+
+## Como Inicializar
+
+#### 1. Clone este repositório para sua máquina local:
+
+git clone https://github.com/SEU_USUARIO/my-car.git
+cd my-car
+
+#### 2 -Instale as dependências usando o npm ou yarn:
+npm install
+# ou
+yarn install
+
+### 3 - Inicie o servidor de desenvolvimento:
+npm run dev
+# ou
+yarn dev
 
 
-
-
-- Estaremos utilizando
-  [] Vite
-  [] TailwindCSS
-  [] clsx
-  [] tailwind-merge
-  [] zod
-  [] react-hook-form
-  [] @hookform/resolvers
-  [] @radix-ui/react-icons
-  [] swiper
-  [] johndoe@example.com password === '12345678'
+# OBS: Para a tela de login:
+- Para ter sucesso no login deve usar o usuário: johndoe@example.com e senha: 12345678
+- Pode tentar outros e-mails para testes de erros.
