@@ -34,12 +34,12 @@ cd my-car
 
 #### 2 -Instale as dependências usando o npm ou yarn:
 npm install
-# ou
+- ou
 yarn install
 
 ### 3 - Inicie o servidor de desenvolvimento:
 npm run dev
-# ou
+- ou
 yarn dev
 
 
