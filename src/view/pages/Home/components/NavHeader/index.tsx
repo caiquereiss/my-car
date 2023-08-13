@@ -8,7 +8,9 @@ export function NavHeader() {
     <nav id="header" className="bg-white  p-4 shadow-[1px_1px_20px_-10px_#000] lg:px-36 text-base font-medium">
       <div className="flex items-center justify-between">
         <div>
-          <img className="w-12 h-12" src={logo} />
+          <a href="/">
+            <img className="w-12 h-12" src={logo} />
+          </a>
         </div>
 
         <div className="md:hidden">
