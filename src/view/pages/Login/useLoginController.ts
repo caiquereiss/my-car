@@ -4,6 +4,7 @@ import { z } from 'zod'
 import { toast } from 'react-hot-toast';
 import { sleep } from '../../../app/utils/sleep';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 const schema = z.object({
@@ -26,7 +27,7 @@ export function useLoginController() {
   } = useForm<FormData>({
     resolver: zodResolver(schema)
   });
-
+  const navigate = useNavigate();
   const handleSubmit = hookFormHandleSubmit(async (data) => {
 
     try {
@@ -35,6 +36,8 @@ export function useLoginController() {
 
       if (data.email === 'johndoe@example.com' && data.password === '12345678') {
         toast.success('Logado com sucesso!');
+        navigate('/', { replace: true });
+
       } else {
 
         throw new Error('Credenciais inválidas');

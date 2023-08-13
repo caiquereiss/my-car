@@ -47,7 +47,6 @@ export function Login() {
           error={errors.password?.message}
           {...register('password')}
         />
-
         <Button type="submit" className="mt-2" isLoading={isLoading}>Entrar</Button>
       </form>
     </>
