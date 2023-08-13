@@ -62,9 +62,9 @@ export function RentCars() {
         </Swiper >
         {
           filteredCars.length === 0 && (
-            <div className="w-ful flex mb-10 gap-2 items-center justify-center  h-[300px]">
+            <div className="w-ful flex mb-10 gap-2 items-center justify-center h-[50px]  lg:h-[300px] relative top-3">
               <img src={search} />
-              <span className="text-gray-700">{`Nenhum resultado foi encontrado para "${filter}"`}</span>
+              <span className="text-gray-700 ">{`Nenhum resultado foi encontrado para "${filter}"`}</span>
             </div>
           )
         }

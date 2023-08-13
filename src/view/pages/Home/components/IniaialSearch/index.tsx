@@ -1,7 +1,12 @@
+import { useWindowWidth } from "../../../../../app/hooks/useWindowWidth";
 import { Button } from "../../../../components/Button";
 import { Input } from "../../../../components/Input";
+import { Select } from "../../../../components/Select";
+import { initialSearchController } from "./inicialSearchController";
 
 export function InitialSearch() {
+  const windowWidth = useWindowWidth();
+  const { handleSubmit } = initialSearchController();
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-5">
       <div className="max-w-md p-6 rounded-lg shadow-lg bg-white">
@@ -11,29 +16,64 @@ export function InitialSearch() {
         <p className="text-gray-700 text-center mb-8">
           Com nosso serviço de aluguel de carros, você está no controle total da sua aventura.
         </p>
-        <form className="flex flex-col gap-4">
-          <Input
-            type="text"
-            placeholder="Local de retirada"
-            name="take"
+        <form onSubmit={handleSubmit}
+          className="flex flex-col gap-4">
+          <Select
+            placeholder="Selecione o Local de retirada"
+            options={[
+              {
+                value: 'vitoria',
+                label: 'Vitória'
+              },
+              {
+                value: 'serra',
+                label: 'Serra'
+              },
+              {
+                value: 'cariacica',
+                label: 'Cariacica'
+              },
+              {
+                value: 'vilavelha',
+                label: 'Vila Velha'
+              },
+            ]}
           />
-          <Input
-            type="text"
-            placeholder="Local de devolução"
-            name="back"
+          <Select
+            placeholder="Selecione o Local de devolução"
+            options={[
+              {
+                value: 'vitoria',
+                label: 'Vitória'
+              },
+              {
+                value: 'serra',
+                label: 'Serra'
+              },
+              {
+                value: 'cariacica',
+                label: 'Cariacica'
+              },
+              {
+                value: 'vilavelha',
+                label: 'Vila Velha'
+              },
+            ]}
           />
           <Input
             type="date"
             name="initial-date"
-            className="pt-0"
+            placeholder={`${windowWidth < 800 ? 'Data inicial' : ''}`}
           />
           <Input
             type="date"
             name="final-data"
-            className="pt-0"
+            placeholder={`${windowWidth < 800 ? 'Data data final' : ''}`}
           />
-          <Button>Pesquisar Carros</Button>
         </form>
+        <a href="#aluguel" className="flex items-center justify-center mt-4">
+          <Button>Pesquisar Carros</Button>
+        </a>
       </div>
     </div>
   );
