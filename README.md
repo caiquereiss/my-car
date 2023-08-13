@@ -4,6 +4,8 @@ Este é o projeto "My Car", uma aplicação desenvolvida com React, Vite e afins
 
 ## Link App em produção:
 - [mycar](https://my-car-umber.vercel.app/): App em produção
+## Link do figma onde fiz a personalização dos carros utilizados:
+- https://www.figma.com/file/kjFLw5H3N8QwrKhSo44skW/Untitled?type=design&node-id=0%3A1&mode=design&t=HANX4Q9wRBTo13Sv-1
 ## Bibliotecas Utilizadas
 
 - [@hookform/resolvers](https://www.npmjs.com/package/@hookform/resolvers): Resolvedores para formulários React.
