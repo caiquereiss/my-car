@@ -9,10 +9,9 @@ export function useInfoCar() {
   const { id } = useParams();
   const navigate = useNavigate();
   const car = RENTCARS.find((car) => car.id === Number(id));
-  console.log('car')
+
 
   useEffect(() => {
-    console.log('Ta bom né?')
     if (!id || !car) {
       toast.error('Carro não encontrado')
       navigate('/', { replace: true });
